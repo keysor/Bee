@@ -29,6 +29,7 @@ public class Bee : MonoBehaviour
         if (collidedWith.CompareTag("balloon"))
         {
             Destroy(collidedWith);
+            GameManager.NumBalloons =- 1;
 
         }
         else if (collidedWith.CompareTag("death"))
